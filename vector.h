@@ -125,23 +125,23 @@ vec3 reflect(vec3 rd, vec3 n) {
 }
 
 vec3 v3rotateX(vec3 vec, double angle) {
-    vec3 2vec = vec;
-    2vec.z = vec.z * cos(angle) - vec.y * sin(angle);
-    2vec.y = vec.z * sin(angle) + vec.y * cos(angle);
-    return 2vec;
+    vec3 _2vec = vec;
+    _2vec.z = vec.z * cos(angle) - vec.y * sin(angle);
+    _2vec.y = vec.z * sin(angle) + vec.y * cos(angle);
+    return _2vec;
 }
 
 vec3 v3rotateY(vec3 vec, double angle)
 {
-    vec3 2vec = vec;
-    2vec.x = vec.x * cos(angle) - vec.z * sin(angle);
-    2vec.z = vec.x * sin(angle) + vec.z * cos(angle);
-    return 2vec;
+    vec3 _2vec = vec;
+    _2vec.x = vec.x * cos(angle) - vec.z * sin(angle);
+    _2vec.z = vec.x * sin(angle) + vec.z * cos(angle);
+    return _2vec;
 }
 
 vec3 v3rotateZ(vec3 vec, double angle) {
-    vec3 2vec = vec;
-    2vec.x = vec.x * cos(angle) - vec.y * sin(angle);
-    2vec.y = vec.x * sin(angle) + vec.y * cos(angle);
-    return 2vec;
+    vec3 _2vec = vec;
+    _2vec.x = vec.x * cos(angle) - vec.y * sin(angle);
+    _2vec.y = vec.x * sin(angle) + vec.y * cos(angle);
+    return _2vec;
 }
